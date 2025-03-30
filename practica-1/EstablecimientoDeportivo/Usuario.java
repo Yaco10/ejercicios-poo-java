@@ -7,14 +7,13 @@ public class Usuario {
     String nombre;
     boolean socio;
     List<Turno> turnos;
-    int dinero;
+    
 
 
-    public Usuario(String nombre, boolean socio) {
+    public Usuario(String nombre) {
         this.nombre = nombre;
-        this.socio = socio;
+        this.socio = false;
         this.turnos = new ArrayList<>();
-        this.dinero = 0;
     }
 
     public void setSocio(boolean socio) {
@@ -29,19 +28,10 @@ public class Usuario {
         return this.socio;
     }
 
-    public int getDinero(){
-        return this.dinero;
-    }
-
-    public void cobrarDinero(int monto){
-        this.dinero -= monto;
-    }
 
     public void agregarTurno(Turno turno) {
         this.turnos.add(turno);
     }
 
-    public void cargarDinero(int dinero) {
-        this.dinero += dinero;
-    }
+
 }

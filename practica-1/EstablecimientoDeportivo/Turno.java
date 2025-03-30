@@ -1,15 +1,20 @@
 package EstablecimientoDeportivo;
-import java.time.LocalDate;
-
 public class Turno {
     Usuario usuario;
+    Horario horario;
     Cancha cancha;
-    LocalDate fecha;
+    
 
-    public Turno(Usuario usuario, Cancha cancha, LocalDate fecha) {
+    public Turno(Usuario usuario, Cancha cancha, Horario horario) {
         this.usuario = usuario;
+        this.horario = horario;
         this.cancha = cancha;
-        this.fecha = fecha;
     }
+
+    public Horario getHorario(){
+        return horario;
+    }
+    
+    
 
 }
