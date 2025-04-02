@@ -81,7 +81,5 @@ public class EstablecimientoDeportivo {
             else{
                 System.out.println("El turno no esta disponible");
             }
-            
-    
     }
 }
