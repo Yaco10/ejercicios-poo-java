@@ -1,5 +1,5 @@
-package practica-2;
 
-public class main {
-    
+
+public class main {s
+    public 
 }
