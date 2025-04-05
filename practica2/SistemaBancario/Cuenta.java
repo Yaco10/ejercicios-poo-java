@@ -11,10 +11,14 @@ abstract class Cuenta {
         this.saldo += monto;
     }
 
-    abstract boolean retirar(float monto);
+    abstract boolean extraer(float monto);
 
     public float getSaldo() {
         return this.saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
     }
 
 }
