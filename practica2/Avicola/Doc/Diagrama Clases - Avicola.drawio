@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram name="Página-1" id="s3NJlXaGbtwvalA1eaUj">
+        <mxGraphModel dx="1084" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="group;shadow=1;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="10" y="140" width="810" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Producto&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ fechaVencimiento: LocalData&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ fechaEnvasado: LocalDate&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ numLote: int;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ granjaOrigen: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerEtiqueta()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="283.0120481927711" width="243.9759036144578" height="208.21917808219177" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;shadow=1;" parent="3" source="2xJGmnFIZz_qNQuexkTA-3" target="2xJGmnFIZz_qNQuexkTA-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ProductoRefrigerado&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ codOrganismoSup: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ tempRecomendada: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ obtenerEtiqueta()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="283.0120481927711" y="263.01369863013696" width="243.9759036144578" height="131.50684931506848" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;shadow=1;" parent="3" source="2xJGmnFIZz_qNQuexkTA-4" target="2xJGmnFIZz_qNQuexkTA-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ProductoCongelado&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="283.0120481927711" y="449.3150684931507" width="243.9759036144578" height="98.63013698630137" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;shadow=1;" parent="3" source="2xJGmnFIZz_qNQuexkTA-5" target="2xJGmnFIZz_qNQuexkTA-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="121.9879518072289" y="580.8219178082192"/>
+                            <mxPoint x="404.99999999999994" y="580.8219178082192"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ProductoCongeladoAgua&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+porcentajeNitrogeno: double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+PorcentajeOxigeno: double´&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+porcentajeDioxidoCarbono: double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+porcentajeVaporAgua: double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry y="613.6986301369863" width="243.9759036144578" height="186.3013698630137" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;shadow=1;" parent="3" source="2xJGmnFIZz_qNQuexkTA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="404.99999999999994" y="547.945205479452" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ProductoCongeladoAire&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+gramosSal: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="283.0120481927711" y="613.6986301369863" width="243.9759036144578" height="98.63013698630137" as="geometry"/>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;shadow=1;" parent="3" source="2xJGmnFIZz_qNQuexkTA-7" target="2xJGmnFIZz_qNQuexkTA-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="688.0120481927711" y="580.8219178082192"/>
+                            <mxPoint x="404.99999999999994" y="580.8219178082192"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2xJGmnFIZz_qNQuexkTA-7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ProductoCongeladoNitrogeno&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+metodoCongelacion: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+tiempoExpuesto: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;shadow=1;" parent="3" vertex="1">
+                    <mxGeometry x="566.0240963855422" y="613.6986301369863" width="243.9759036144578" height="98.63013698630137" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
