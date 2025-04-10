@@ -23,12 +23,10 @@ Para compilar y ejecutar las prácticas, es necesario contar con:
 
 1. **Clonar el repositorio**:
 
- ´´´bash
-    git clone https://github.com/Yaco10/practicas-poo-java.git
-´´´ 
-   
-   
-2. **Importar el proyecto en el IDE de preferencia**:
+ ```bash
+cd practicas-poo-java/practica1
+   ```
+3. **Importar el proyecto en el IDE de preferencia**:
 
 Si el IDE soporta proyectos Maven, importar como un proyecto Maven.
 
