@@ -5,6 +5,7 @@ import java.util.List;
 
 public class SistemaSiembra {
     private List<Lote> lotes;
+    private List<Cereal> cereales;
     private List<String> mineralesPrincipales;
 
     public SistemaSiembra() {
@@ -12,18 +13,27 @@ public class SistemaSiembra {
     }
 
     public void quePuedoSembrar(Lote lote) {
-        if(CerealCosechaFina.compatibleConTerreno(lote)){
-            System.out.println("Cosecha fina");
+        for (Cereal cereal : this.cereales) {
+            if (cereal.compatibleConTerreno(lote)) {
+                System.out.println(cereal.getNombre());
+            }
         }
-        if(CerealCosechaGruesa.compatibleConTerreno(lote)){
-            System.out.println("Cosecha gruesa");
-        }
-        if(CerealPastura.compatibleConTerreno(lote)){
-            System.out.println("Pastura");
+    }
+
+    public void dondePuedoSembrar(Cereal cereal) { 
+        for (Lote lote : this.lotes) {
+            if (cereal.compatibleConTerreno(lote)) {
+                System.out.println(lote.getCantHectareas());
+            }
         }
     }
 
     public boolean esLoteEspecial(Lote lote) {
-        return lote.esEspecial(this.mineralesPrincipales);
+        for (String mineral : mineralesPrincipales) {
+            if (!lote.tieneMineral(mineral)) {
+                return false;
+            }
+        }
+        return true;
     }
 }

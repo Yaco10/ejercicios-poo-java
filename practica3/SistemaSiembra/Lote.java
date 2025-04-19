@@ -20,7 +20,7 @@ public class Lote {
         return new ArrayList<>(minerales);
     }
 
-    public boolean esEspecial(List<String> mineralesRequeridos) {   
-        return mineralesRequeridos.containsAll(minerales);
+    public boolean tieneMineral(String mineral) {   
+        return minerales.contains(mineral);
     }
 }
