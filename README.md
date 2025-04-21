@@ -2,7 +2,15 @@
 
 Este repositorio contiene una serie de prácticas desarrolladas para la materia de segundo año "Programación Orientada a Objetos" de la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNICEN). El objetivo de estas prácticas es reforzar y aplicar los conceptos fundamentales de la programación orientada a objetos utilizando el lenguaje Java.
 
-## Estructura del Repositorio
+## 📚 Contenido
+
+- Herencia.
+- Encapsulamiento.
+- Polimorfismo.
+- Binding Dinamico - Estatico
+- 
+
+## 📁 Estructura del Repositorio
 
 El repositorio está organizado en carpetas que corresponden a cada práctica realizada:
 
@@ -12,8 +20,14 @@ El repositorio está organizado en carpetas que corresponden a cada práctica re
 
 *Nota*: Se recomienda revisar cada carpeta para obtener detalles específicos sobre los objetivos y requerimientos de cada práctica.
 
-## Requisitos
+## 🛠️ Herramientas utilizadas
 
+- **Lenguaje:** Java
+- **Editor Texto:** Visual Studio Code
+- **Diagramas:** Drawio
+
+  
+## Requisitos
 Para compilar y ejecutar las prácticas, es necesario contar con:
 
 - **Java Development Kit (JDK)**: Se recomienda la versión 8 o superior.
@@ -43,9 +57,12 @@ Compilar los archivos .java correspondientes.
 
 ## Ejecutar la clase principal según las indicaciones de cada práctica.
 
-## Contribuciones
-Este repositorio ha sido creado con fines educativos. Si deseas contribuir o reportar algún problema, por favor crea un "issue" en el repositorio o envía un "pull request" con las mejoras propuestas.
+
+## 👨‍🏫 Créditos
+Desarrollado como parte de las actividades académicas de la materia **Programacion Orientada A Objetos
 
 Licencia
 Este proyecto se distribuye bajo la Licencia MIT.
 
+## 🦾 Autor
+Yaco Recroa
