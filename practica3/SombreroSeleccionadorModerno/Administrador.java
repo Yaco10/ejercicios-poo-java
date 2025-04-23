@@ -19,5 +19,5 @@ class Administrador {
             alumno.setCasa(casa);
             casa.agr4egarAlumno(alumno);
         }
-    }
+    } 
 }
