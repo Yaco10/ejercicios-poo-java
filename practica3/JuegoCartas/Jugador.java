@@ -10,4 +10,8 @@ class Jugador {
     public void agregarCarta(Carta carta){
         this.mazo.agregarCarta(carta);
     }
+
+    public int getCantCartas(){
+        return this.mazo.cantCartas();
+    }
 }

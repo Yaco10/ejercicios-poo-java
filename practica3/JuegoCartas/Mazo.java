@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 class Mazo {
     private List<Carta> cartas;
 
@@ -5,8 +9,8 @@ class Mazo {
         cartas = new ArrayList<Carta>();
     }
 
-    public void agregarCarta(Carta carta) {
-        cartas.add(carta);
+    public void agregarCarta(Carta carta1) {
+        cartas.add(carta1);
     }
 
     public void mezclar() {
