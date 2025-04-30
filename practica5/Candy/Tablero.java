@@ -21,35 +21,74 @@ public class Tablero {
         }
         return sumaFortaleza / sumaPoder;
     }
+
+    public int getPuntajeMinimo() {
+        return puntajeMinimo;
+    }
     
-    public List<Ficha> fichasPoderMayor2(){
-        List<Ficha> fichasCompatible = new ArrayList<>();
-        for(Ficha ficha : this.fichas){
-            if(ficha.getPoderDestruccion() > 2){
-                fichas.add(ficha);
+    private List<Ficha> filtrarPorCondicion(String tipo) {
+        List<Ficha> resultado = new ArrayList<>();
+        for (Ficha ficha : this.fichas) {
+            if (tipo.equals("PODER") && ficha.getPoderDestruccion() > 2) {
+                resultado.add(ficha);
+            } else if (tipo.equals("LUGAR") && ficha.getEspacioOcupado() > 4) {
+                resultado.add(ficha);
+            } else if (tipo.equals("FORTALEZA") && ficha.getFortaleza() > 5) {
+                resultado.add(ficha);
+            } else if (tipo.equals("PODER_Y_LUGAR") && ficha.getPoderDestruccion() > 2 && ficha.getEspacioOcupado() > 4) {
+                resultado.add(ficha);
+            } else if (tipo.equals("PODER_O_FORTALEZA") && 
+                       (ficha.getPoderDestruccion() > 2 || ficha.getFortaleza() > 5)) {
+                resultado.add(ficha);
+            } else if (tipo.equals("LUGAR_Y_FORTALEZA") && ficha.getEspacioOcupado() > 4 && ficha.getFortaleza() > 5) {
+                resultado.add(ficha);
+            } else if (tipo.equals("LUGAR_O_FORTALEZA") && 
+                       (ficha.getEspacioOcupado() > 4 || ficha.getFortaleza() > 5)) {
+                resultado.add(ficha);
+            } else if (tipo.equals("PODER_Y_FORTALEZA") && ficha.getPoderDestruccion() > 2 && ficha.getFortaleza() > 5) {
+                resultado.add(ficha);
+            } else if (tipo.equals("PODER_O_LUGAR") && 
+                       (ficha.getPoderDestruccion() > 2 || ficha.getEspacioOcupado() > 4)) {
+                resultado.add(ficha);
             }
         }
-        return fichasCompatible;
+        return resultado;
     }
-
-    public List<Ficha> fichasLugarMayor4(){
-        List<Ficha> fichasCompatible = new ArrayList<>();
-        for(Ficha ficha : this.fichas){
-            if(ficha.getEspacioOcupado() > 4){
-                fichas.add(ficha);
-            }
-        }
-        return fichasCompatible;
+    
+    public List<Ficha> fichasPoderMayor2() {
+        return filtrarPorCondicion("PODER");
     }
-
-    public List<Ficha> fichasLugarMayor4(){
-        List<Ficha> fichasCompatible = new ArrayList<>();
-        for(Ficha ficha : this.fichas){
-            if(ficha.getEspacioOcupado() > 4){
-                fichas.add(ficha);
-            }
-        }
-        return fichasCompatible;
+    
+    public List<Ficha> fichasLugarMayor4() {
+        return filtrarPorCondicion("LUGAR");
+    }
+    
+    public List<Ficha> fichasFortalezaMayor5() {
+        return filtrarPorCondicion("FORTALEZA");
+    }
+    
+    public List<Ficha> fichasPoderYLugar() {
+        return filtrarPorCondicion("PODER_Y_LUGAR");
+    }
+    
+    public List<Ficha> fichasPoderOFortaleza() {
+        return filtrarPorCondicion("PODER_O_FORTALEZA");
+    }
+    
+    public List<Ficha> fichasLugarYFortaleza() {
+        return filtrarPorCondicion("LUGAR_Y_FORTALEZA");
+    }
+    
+    public List<Ficha> fichasLugarOFortaleza() {
+        return filtrarPorCondicion("LUGAR_O_FORTALEZA");
+    }
+    
+    public List<Ficha> fichasPoderYFortaleza() {
+        return filtrarPorCondicion("PODER_Y_FORTALEZA");
+    }
+    
+    public List<Ficha> fichasPoderOLugar() {
+        return filtrarPorCondicion("PODER_O_LUGAR");
     }
 
 
