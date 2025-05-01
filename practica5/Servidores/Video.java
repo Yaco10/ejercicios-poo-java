@@ -12,5 +12,5 @@ public class Video extends Contenido{
     @Override
     public String getTexto() {
         return descripcion;
-    }
+    } 
 }
