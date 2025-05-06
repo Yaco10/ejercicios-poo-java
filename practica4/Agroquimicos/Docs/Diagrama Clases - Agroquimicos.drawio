@@ -1,0 +1,79 @@
+<mxfile host="Electron" modified="2025-05-05T22:03:29.232Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.1 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="-8a2R2XZnVuupy6y8jHc" version="24.6.1" type="device">
+  <diagram name="Page-1" id="_sIg_o7IvYb-hI5rQIIx">
+    <mxGraphModel dx="1183" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dyfHv-wzKUo8bUBudpek-1" value="Producto Quimico&lt;div&gt;-nombre&lt;/div&gt;&lt;div&gt;-conjunto cultivos donde se desaconseja&lt;/div&gt;&lt;div&gt;-conjunto de estados patologico para donde aplicar&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="140" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-2" value="Enfermedad&lt;div&gt;-nombre&lt;/div&gt;&lt;div&gt;-conjunto de estados patologicos&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="238" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-3" value="Cultivo&lt;div&gt;nombre&lt;/div&gt;&lt;div&gt;coleccion de enfermetades frecuentes&lt;/div&gt;&lt;div&gt;metodo ver si agroquimico sirve&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="35" y="308" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-4" value="Agroquimico cubre enfermadad &amp;lt;-&amp;gt; trata todos los estados patologicos dela enfermadad" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="60" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;startArrow=none;startFill=0;" edge="1" parent="1" source="dyfHv-wzKUo8bUBudpek-5" target="dyfHv-wzKUo8bUBudpek-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-5" value="Agroquimico" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-6" value="- nombre: String&lt;div&gt;-cultivosDesaconsejado: List&amp;lt;Cultivo&amp;gt;&lt;/div&gt;&lt;div&gt;- estadosPatologicosAplicar: List&amp;lt;String&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-5">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-5">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-8" value="+ cubreEnfermedad(Enfermedad ): bool&lt;div&gt;+ seDesaconseja(Cultivo cultivo): bool&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-5">
+          <mxGeometry y="88" width="280" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-9" value="Enfermedad" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="620" width="280" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-10" value="- nombre: String&lt;div&gt;- estadosPatologicos: List&amp;lt;String&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-9">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-9">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-12" value="+ tieneEstadoPatologico(String) : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-9">
+          <mxGeometry y="88" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;startArrow=none;startFill=0;" edge="1" parent="1" source="dyfHv-wzKUo8bUBudpek-13" target="dyfHv-wzKUo8bUBudpek-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="dyfHv-wzKUo8bUBudpek-13" target="dyfHv-wzKUo8bUBudpek-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-13" value="Cultivo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="430" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-14" value="- nombre: String&lt;div&gt;- enfermedadesFrec: List &amp;lt;Enfermedades&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-13">
+          <mxGeometry y="26" width="280" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-13">
+          <mxGeometry y="80" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-16" value="+ agroquimicoUtil(Agroquimico agroquimico)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-13">
+          <mxGeometry y="88" width="280" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-20" value="Sistema Cultivos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="220" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-21" value="- agroquimicos: List&amp;lt;Agroquimico&amp;gt;&lt;div&gt;- cultivos: List&amp;lt;Cultivo&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-20">
+          <mxGeometry y="26" width="290" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-20">
+          <mxGeometry y="80" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="dyfHv-wzKUo8bUBudpek-23" value="+ agroquimicoPara(Enfermedad enfermedad): String&lt;div&gt;+ agroquimicosEn(Cultivo cul, Enfermedad en): Strin&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dyfHv-wzKUo8bUBudpek-20">
+          <mxGeometry y="88" width="290" height="52" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
