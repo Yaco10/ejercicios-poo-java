@@ -1,0 +1,76 @@
+classDiagram
+    class ObjetoMuseo {
+        <<abstract>>
+        +nombre: String
+        +getPrecio(): int
+        +getPeso(): int
+        +getCantidad(): int
+        +getMayorPrecio(): Articulo
+    }
+
+    class Articulo {
+        +descripcion: String
+        +peso: int
+        +getPrecio(): int
+        +getPeso(): int
+    }
+
+    class ArticuloEspecial {
+        +unidadesConocidas: int
+        +getPrecio(): int
+    }
+
+    class Coleccion {
+        +colecciones: List<ObjetoMuseo>
+        +getPeso(): int
+        +getPrecio(): int
+    }
+
+    class ColeccionPrivada {
+        +colecciones: List<ObjetoMuseo>
+        +getPeso(): int
+        +getPrecio(): int
+    }
+
+    class Condicion {
+        <<interface>>
+        +cumpleCon(Articulo): boolean
+    }
+
+    class CondicionContienePalabra {
+        -palabra: String
+        +cumpleCon(Articulo): boolean
+    }
+
+    class CondicionPrecioMayor {
+        -precioTope: int
+        +cumpleCon(Articulo): boolean
+    }
+
+    class CondicionPesoMayor {
+        -pesoTope: int
+        +cumpleCon(Articulo): boolean
+    }
+
+    class CondicionOR {
+        -c1: Condicion
+        -c2: Condicion
+        +cumpleCon(Articulo): boolean
+    }
+
+    class CondicionAND {
+        -c1: Condicion
+        -c2: Condicion
+        +cumpleCon(Articulo): boolean
+    }
+
+    ObjetoMuseo <|-- Articulo
+    ObjetoMuseo <|-- Coleccion
+    Coleccion <|-- ColeccionPrivada
+    Articulo <|-- ArticuloEspecial
+
+    Condicion <|-- CondicionContienePalabra
+    Condicion <|-- CondicionPrecioMayor
+    Condicion <|-- CondicionPesoMayor
+    Condicion <|-- CondicionOR
+    Condicion <|-- CondicionAND
