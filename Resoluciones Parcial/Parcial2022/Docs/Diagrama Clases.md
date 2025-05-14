@@ -2,10 +2,33 @@
 
 ```mermaid
 classDiagram
+
+    class EstrategiaCalculo {
+        <<interface>>
+        +calcular(): int
+    }
+
+    class CalculoAlquilerFijo {
+        <<interface>>
+        +calcular(): int
+    }
+
+    class CalculoAlquilerPorcentaje {
+        <<interface>>
+        +calcular(): int
+    }
+
+     class CalculoAlquilerPorcentajeFijo {
+        <<interface>>
+        +calcular(): int
+    }
+
     class ElementoAlquiler {
         <<abstract>>
         -codigoIdentificacion: int
         +getCopia(Condicion c1): elementoAlquiler
+        +getPrecio(): int
+        +getValorAlquiler(): int
     }
 
     class ElementoBase {
@@ -13,12 +36,16 @@ classDiagram
         -descripcion: String
         -estragiaAlquier: EstrategiaCalculo
         +getCopia(Condicion c1): ElemetnoAlquiler
+        +getPrecio(): int
+        +getValorAlquiler(): int
     }
 
     class Combo {
         -antiguedadMeses: int
         -descripcion: String
         +getCopia(Condicion c1): ElemetnoAlquiler
+        +getPrecio(): int
+        +getValorAlquiler(): int
     }
 
     class ElementoObsolencia{
@@ -27,8 +54,11 @@ classDiagram
         -factorPrecioEnevecido: double;
         -factorAlquilerEnvejecido: double;
         +getPrecio()
-        +getCopia(Condicion c1): ElemetnoAlquiler
+        +getValorAlquiler(): int
+
     }
+
+    
     class Condicion {
         <<interface>>
         +cumpleCon(elementoBase eb)
@@ -68,3 +98,7 @@ classDiagram
     Condicion <|-- CondicionCodigo
     Condicion <|-- CondicionOR
     Condicion <|-- CondicionAND
+
+    EstrategiaCalculo <|-- CalculoAlquilerFijo
+    EstrategiaCalculo <|-- CalculoAlquilerPorcentaje
+    EstrategiaCalculo <|-- CalculoAlquilerPorcentajeFijo
